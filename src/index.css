@@ -16,5 +16,42 @@ code {
 
 .top-nav{
   background-color: #202020;
-  height: 10vh;
+  height: 160px;
+  padding: 0 25vw !important;
+}
+
+.navbar-content{
+}
+
+.logo{
+  width: 36px;
+  margin-right: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.viewport{
+  padding: 0 0 100px 0!important;
+  background-color: #202020;
+  color: white;
+}
+
+.lead h1{
+  font-size: 4rem;
+  font-family: Roboto;
+  font: roboto;
+  font-weight: 700 ;
+}
+
+.banner{
+  padding: 60px 25vw 0 25vw !important;
+
+}
+
+.elevator {
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  padding: 2rem !important;
 }
