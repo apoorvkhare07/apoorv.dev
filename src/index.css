@@ -20,7 +20,10 @@ code {
   padding: 0 20vw !important;
 }
 
-.navbar-content{
+.navbar-brand{
+  font-size: 2rem !important;
+  font-family: roboto;
+  font-weight: 500 !important;
 }
 
 .logo{
@@ -29,7 +32,7 @@ code {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 .viewport{
@@ -46,11 +49,20 @@ code {
 }
 
 
+.lead p{
+  font-size: 1.5rem;
+  font-family: Roboto;
+  font: roboto;
+  font-weight: 400 ;
+}
+
 .banner{
   padding: 60px 20vw 0 20vw !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* max-width: 800px !important; */
+  box-sizing: border-box;
 
 }
 
@@ -62,6 +74,7 @@ code {
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
 .my-image{
@@ -80,7 +93,7 @@ code {
 }
 
 .elevator p{
-  padding: 12px 5px;
+  padding: 12px 0px;
   text-align: center;
   font-family: roboto;
   font-size: 1.2rem;
@@ -108,4 +121,35 @@ code {
   padding: 1rem 0.5rem;
   border: 1px solid;
   border-color: transparent transparent #181818 transparent;
+}
+
+
+.navbar-nav a{
+  font-size: 1.25rem !important;
+  padding: 0 .8rem !important;
+  color: #616161 !important;
+}
+
+.navbar-nav a:hover{
+  text-decoration: none;
+  color: #949494 !important;
+}
+
+.intro{
+  margin-top: 30px;
+}
+.intro h1{
+  font-size: 2.5rem;
+  font-family: Roboto;
+  font: roboto;
+  font-weight: 700 ;
+}
+
+
+.intro p{
+  font-size: 1.25rem;
+  font-family: Roboto;
+  font: roboto;
+  font-weight: 400 ;
+  padding-top: 1.25rem;
 }

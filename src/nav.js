@@ -6,13 +6,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import logo from './static/logo.png';
+import {BrowserRouter as Router, Link} from 'react-router-dom'
 
 class TopNav extends Component {
   render(){
     return (
       <Navbar className="top-nav" collapseOnSelect expand="lg"  variant="dark">
 
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="/">
       <img className = "logo" src = {logo} />
       Apoorv Khare</Navbar.Brand>
 
@@ -21,10 +22,11 @@ class TopNav extends Component {
 
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">More deets</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            Dank memes
-          </Nav.Link>
+
+            <Link to="/about">About</Link>
+            <Link to="/blogs">Articles</Link>
+            <Link to="/cv">Portfolio</Link>
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>

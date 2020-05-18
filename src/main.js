@@ -9,14 +9,14 @@ class Main extends Component{
         return (
             <Container fluid className="banner">
 
-                    <Col md={6} className= "lead">
+                    <Col md={7} lg={7} className= "lead">
                         <h1> Hi, I'm Apoorv </h1>
                         <p> I'm a full stack software developer creating open source projects and writing about modern technologies </p>
                     </Col>
-                    <Col md = {2} >
+                    <Col md = {1} lg={1} >
 
                     </Col>
-                    <Col md = {4} className="elevator">
+                    <Col md = {4} lg = {4} className="elevator">
                         <img src = {me} className="my-image" />
                         <p>
                             I’m currently looking for a internship/freelance in software development. If you have an interesting project for me, let’s talk.
