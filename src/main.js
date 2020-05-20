@@ -21,7 +21,9 @@ class Main extends Component{
                         <p>
                             I’m currently looking for a internship/freelance in software development. If you have an interesting project for me, let’s talk.
                         </p>
+                        <Button className="email-cta-2">View CV</Button>
                         <Button className="email-cta">Email me</Button>
+
 
                     </Col>
 

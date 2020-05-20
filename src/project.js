@@ -10,19 +10,16 @@ class Project extends Component{
         const projects = [
             {
                 icon: logo,
-                title: 'Developer | Coordinator at IMG, IIT Roorkee ',
-                about: "Information Management Group (IMG) is the student body\
-                that developed, manages and upgrades both the content\
-                management system powering the IIT Roorkee website and\
-                Channel i, the official intranet portal.",
-                tags: ['a','b'],
+                title: 'Content Management System',
+                about: "At IMG we created an Content management system, which helps in managing and publishing web-pages on IIT Roorkee’s official website.",
+                tags: ['Yii2.0','Apache2.0', 'PgSQL', 'RabbitMQ'],
+                link:'https://internet.channeli.in/maintainer_site/projects/cms/'
             },
             {
                 icon: logo,
-                title: 'Software Developer Summer internship | Radicali Pte. Ltd.',
-                about: "Radical i is a Singapore based startup working to make compliance teams ridiculously efficient.\
-                Built their website along with coming up with UI aspects, coded a seamless website on react.js and worked on SEO optimization.",
-                tags: ['a','b'],
+                title: 'Theme Generator',
+                about: "Added theme generator tool to commonly used web interface for databases phpMyAdmin, which allows users to create their custom themes",
+                tags: ['PHP','SASS'],
             },
             {
                 icon: logo,
@@ -44,17 +41,19 @@ class Project extends Component{
                     <Col md={1} >
                         <img src = {row.icon} className= "logo-icon" />
                     </Col>
-
-                    <Col md = {10}>
+                    <Col md={2} >
+                        <p> {row.title} </p>
+                    </Col>
+                    <Col md = {8}>
                         <p> {row.about}</p>
                         {row.tags.map((value, index) => {
-                            return <Button> {value} </Button>
+                            return <Button  className="email-cta-3"> {value} </Button>
                         })}
 
                     </Col>
 
                     <Col md = {1}>
-                        <Button className="email-cta">Link</Button>
+                       <a href={row.link}> <Button className="email-cta">Link</Button> </a>
                     </Col>
                 </Row>
             )

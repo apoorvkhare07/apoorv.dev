@@ -17,6 +17,7 @@ class Home extends Component {
         <List />
         <Project />
         <Article />
+
       </Container>
   );
   }
