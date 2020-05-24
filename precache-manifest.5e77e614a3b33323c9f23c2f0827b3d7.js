@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "238142dc0b800e3fea9f15e88ce35db5",
+    "revision": "5913f9656ca6f513e424b4e860fcea69",
     "url": "/apoorv.dev/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/apoorv.dev/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "80df1cfcde8656f60ed1",
+    "revision": "c9f4f65c234e94778814",
     "url": "/apoorv.dev/static/css/main.5f2b8e7c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/apoorv.dev/static/js/2.92cdeb06.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80df1cfcde8656f60ed1",
-    "url": "/apoorv.dev/static/js/main.5eac2422.chunk.js"
+    "revision": "c9f4f65c234e94778814",
+    "url": "/apoorv.dev/static/js/main.5ddd4ae2.chunk.js"
   },
   {
     "revision": "05cc0fd222df674ca7b7",
