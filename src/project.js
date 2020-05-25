@@ -19,13 +19,14 @@ class Project extends Component{
                 icon: logo,
                 title: 'Theme Generator',
                 about: "Added theme generator tool to commonly used web interface for databases phpMyAdmin, which allows users to create their custom themes",
-                tags: ['PHP','SASS'],
+                tags: ['PHP','SASS', 'Jquery'],
+                links: ''
             },
             {
                 icon: logo,
-                title: 'Full Stack Developer internship at Dataphi Analytics Labs',
-                about: "Dataphi Labs builds digital product for clients catering their requirements, and helping them reach idea to revenue faster.",
-                tags: ['a','b'],
+                title: 'Sentiment Analysis of user reviews',
+                about: "Executed sentiment analysis and opinion mining to infer customer satisfaction trend over geographical location and timeline for 5 beauty brands.",
+                tags: ['Python','Scrapy', 'Quasi-RNN'],
             },
             {
                 icon: logo,
