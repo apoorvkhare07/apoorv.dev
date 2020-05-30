@@ -9,20 +9,18 @@ class Main extends Component{
         return (
             <Container fluid className="banner">
 
-                    <Col md={7} lg={7} className= "lead">
+                    <Col md={8} lg={8} className= "lead">
                         <h1> Hi, I'm Apoorv </h1>
-                        <p> I'm a full stack software developer creating open source projects and writing about modern technologies </p>
+                        <p> I'm a software developer working towards building <span style={{color: "#ffd479"}}>cross‑platform </span> and <span style={{color: "#ffd479"}}>full‑stack </span> web and mobile apps, <span style={{color: "#ffd479"}}> opensource </span> projects and writing about new technologies.</p>
                     </Col>
-                    <Col md = {1} lg={1} >
 
-                    </Col>
                     <Col md = {4} lg = {4} className="elevator">
                         <img src = {me} className="my-image" />
                         <p>
-                            I’m currently looking for a internship/freelance in software development. If you have an interesting project for me, let’s talk.
+                            I’m currently looking for internship in software development. If you have interesting project for me, let’s talk.
                         </p>
-                        <button className="email-cta-2">View CV</button>
-                        <button className="email-cta">Email me</button>
+                        <a href="/cv" target="_blank"><button className="email-cta-2">View CV</button></a>
+                        <a><button className="email-cta">Email me</button></a>
 
 
                     </Col>

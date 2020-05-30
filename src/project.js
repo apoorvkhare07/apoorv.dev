@@ -8,6 +8,8 @@ import iitrlogo from './static/iitrlogo.png'
 import andromeda from './static/andromeda.png'
 import theme from './static/theme.png'
 import todo from './static/to-do.png'
+import ihblogo from './static/ihb.png'
+import sentiment from './static/face.png'
 
 
 class Project extends Component{
@@ -35,7 +37,7 @@ class Project extends Component{
                 link: "https://github.com/apoorvkhare07/andromeda"
             },
             {
-                icon: logo,
+                icon: ihblogo,
                 title: 'I hate Bootstrap',
                 about: "A CSS boilerplate to develop responsive, consistent and minimal web pages and apps.",
                 tags: ['a','b'],
@@ -49,7 +51,7 @@ class Project extends Component{
                 link: "https://github.com/apoorvkhare07/apoorv.dev"
             },
             {
-                icon: logo,
+                icon: sentiment,
                 title: 'Sentiment Analysis of user reviews',
                 about: "Sentiment analysis and opinion mining of customer satisfaction trend over geographical location and timeline for zbeauty brands.",
                 tags: ['Python','Scrapy', 'Quasi-RNN'],

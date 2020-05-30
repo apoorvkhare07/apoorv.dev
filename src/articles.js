@@ -18,16 +18,7 @@ class Article extends Component{
                 title: 'Software Developer Summer internship | Radicali Pte. Ltd.',
 
             },
-            {
-                icon: logo,
-                title: 'Full Stack Developer internship at Dataphi Analytics Labs',
 
-            },
-            {
-                icon: logo,
-                title: 'Full stack developer intern at Korangle',
-
-            }
         ]
 
         const articles_comp = articles.map((row,index) => {

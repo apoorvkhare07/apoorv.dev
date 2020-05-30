@@ -9,23 +9,22 @@ class Contact extends Component{
         return(
             <Container fluid className="footer">
                 <Row>
-                    <Col lg= {7}>
-                        <p> Let's talk, write to me at apoorvkhare007@gmail.com </p>
-                    </Col>
-                    <Col className="icons">
-                        <FontAwesomeIcon icon={faGithub}  size= '2x' />
-                        <FontAwesomeIcon icon={faTwitter}  size= '2x' />
-                        <FontAwesomeIcon icon={faLinkedin} size= '2x' />
-                        <FontAwesomeIcon icon={faDribbble} size= '2x' />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className = "note" >
+                    <Col lg= {7} className = "note">
+                        {/* <p> Let's talk, write to me at apoorvkhare007@gmail.com </p> */}
+
                     <p>
                         Built & designed with ❤️
                     </p>
+
+                    </Col>
+                    <Col className="icons">
+                       <a target="_blank" href="https://github.com/apoorvkhare07"> <FontAwesomeIcon icon={faGithub}  size= '2x' /> </a>
+                       <a target="_blank" href="https://twitter.com/apoorvkhare12"><FontAwesomeIcon icon={faTwitter}  size= '2x' /> </a>
+                       <a target="_blank" href="https://linkedin.com/in/apoorvkhare07"><FontAwesomeIcon icon={faLinkedin} size= '2x' /> </a>
+                       <a target="_blank" href="https://dribbble.com/apoorv07"><FontAwesomeIcon icon={faDribbble} size= '2x' /> </a>
                     </Col>
                 </Row>
+
 
             </Container>
         );
