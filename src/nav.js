@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import logo from './static/logo.png';
 import {BrowserRouter as Router, Link} from 'react-router-dom'
+import Pdf from './Docs/dev_cv.pdf'
 
 class TopNav extends Component {
   render(){
@@ -25,7 +26,7 @@ class TopNav extends Component {
 
             <Link to="/about">About</Link>
             <Link to="/blogs">Articles</Link>
-            <Link to="/cv">Portfolio</Link>
+            <a href = {Pdf} >Portfolio</a>
 
         </Nav>
       </Navbar.Collapse>
