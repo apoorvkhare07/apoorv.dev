@@ -36,9 +36,10 @@ class TopNav extends Component {
       <Navbar className= { scrolled ? "nav-container-2" : "nav-container" } collapseOnSelect expand="lg"  variant="dark">
       <Navbar className= { scrolled ? "top-nav-2" : "top-nav" } collapseOnSelect expand="lg"  variant="dark">
 
-      <Navbar.Brand href="/">
+      <a href="/" className="navbar-brand">
       <img className = "logo" src = {logo} />
-      Apoorv Khare</Navbar.Brand>
+      Apoorv Khare
+      </a>
 
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
