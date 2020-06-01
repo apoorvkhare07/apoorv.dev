@@ -10,12 +10,17 @@ class Article extends Component{
         const articles = [
             {
                 icon: logo,
-                title: 'Developer | Coordinator at IMG, IIT Roorkee ',
+                title: ' Creating art with Convolutional Neural networks ',
 
             },
             {
                 icon: logo,
-                title: 'Software Developer Summer internship | Radicali Pte. Ltd.',
+                title: 'The emotional and cognitive tolls of staying informed ',
+
+            },
+            {
+                icon: logo,
+                title: ' Setting up essentials for Mac-os ',
 
             },
 

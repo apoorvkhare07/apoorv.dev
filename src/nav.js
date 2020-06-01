@@ -10,9 +10,31 @@ import {BrowserRouter as Router, Link} from 'react-router-dom'
 import Pdf from './Docs/dev_cv.pdf'
 
 class TopNav extends Component {
-  render(){
+  state = {
+    scrolled: false,
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.navOnScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.navOnScroll)
+  }
+
+  navOnScroll = () => {
+    if (window.scrollY > 40) {
+      this.setState({ scrolled: true })
+    } else {
+      this.setState({ scrolled: false })
+    }
+  }
+
+  render() {
+    const { scrolled } = this.state
     return (
-      <Navbar className="top-nav" collapseOnSelect expand="lg"  variant="dark">
+      <Navbar className= { scrolled ? "nav-container-2" : "nav-container" } collapseOnSelect expand="lg"  variant="dark">
+      <Navbar className= { scrolled ? "top-nav-2" : "top-nav" } collapseOnSelect expand="lg"  variant="dark">
 
       <Navbar.Brand href="/">
       <img className = "logo" src = {logo} />
@@ -30,7 +52,10 @@ class TopNav extends Component {
 
         </Nav>
       </Navbar.Collapse>
+
     </Navbar>
+    </Navbar>
+
   );
   }
 }

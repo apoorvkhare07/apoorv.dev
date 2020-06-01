@@ -11,7 +11,7 @@ class Main extends Component{
 
                     <Col md={8} lg={8} className= "lead">
                         <h1> Hi, I'm Apoorv </h1>
-                        <p> I'm a software developer working towards building <span style={{color: "#ffd479"}}>cross‑platform </span> and <span style={{color: "#ffd479"}}>full‑stack </span> web and mobile apps, <span style={{color: "#ffd479"}}> opensource </span> projects and writing about new technologies.</p>
+                        <p> I'm a software developer working towards building <span style={{color: "#ffd479"}}>cross‑platform </span> and <span style={{color: "#ffd479"}}>full‑stack </span> web and mobile apps, <span style={{color: "#ffd479"}}> opensource </span> projects and <span style={{color: "#ffd479"}}> writing </span> about new technologies.</p>
                     </Col>
 
                     <Col md = {4} lg = {4} className="elevator">

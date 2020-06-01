@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container'
 import About from './About.js'
 import {Route} from 'react-router-dom'
 import Contact from './Contact.js'
-
+import Blogs from './blogs.js'
 
 class App extends Component {
   render() {
@@ -16,8 +16,8 @@ class App extends Component {
 
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
-        {/* <Route exact path='/blogs' component={Blogs} /> */}
-        {/* <Route exact path='/cv' href={Pdf} /> */}
+        <Route exact path='/blogs' component={Blogs} />
+
         <Contact />
       </Container>
 
