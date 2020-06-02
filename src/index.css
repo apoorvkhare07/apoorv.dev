@@ -27,7 +27,8 @@ code {
   width: 100vw !important;
   background-color: #1a1a1a !important;
   padding: 0 0 !important;
-  z-index: 2 !important;
+  z-index: 1 !important;
+  margin-bottom: 120px !important;
 }
 
 .top-nav{
@@ -51,6 +52,7 @@ code {
   margin: 0 auto;
   font-family: Lato;
   font-weight: 500 !important;
+
 }
 
 .navbar-brand{
