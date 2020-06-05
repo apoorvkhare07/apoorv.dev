@@ -70,20 +70,20 @@ class Project extends Component{
         const projects_comp = projects.map((row,index) => {
             return(
                 <Row className="project-item">
-                    <Col md={1} >
+                    <Col xs = {3} md={1} >
                         <img src = {row.icon} className= "logo-icon" />
 
 
                     </Col>
-                    <Col md={3} className="project-title-2">
+                    <Col md={3} xs={6} className="project-title-2">
                         <h6> {row.title} </h6>
                     </Col>
-                    <Col md = {7}>
+                    <Col md = {7} className="project-about">
                         <p> {row.about}</p>
 
                     </Col>
 
-                    <Col md = {1}>
+                    <Col md = {1} xs={3}>
                        <a href={row.link} target="_blank"> <button className="email-cta">Link</button> </a>
                     </Col>
                 </Row>
@@ -92,11 +92,11 @@ class Project extends Component{
 
         return (
             <Container fluid className="list-container">
-                <Row>
+
                 <h1>
                     Projects
                 </h1>
-                </Row>
+
                 {projects_comp}
             </Container>
         )

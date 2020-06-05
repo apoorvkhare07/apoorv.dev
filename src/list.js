@@ -45,17 +45,17 @@ class List extends Component{
         const exp = experiences.map((row,index) => {
             return(
                 <Row className="project-item">
-                    <Col md={1} >
+                    <Col md={1} xs={3}>
                     <a href = {row.link} target="_blank" >
                         <img src = {row.icon} className= "logo-icon" />
                     </a>
 
                     </Col>
-                    <Col md={3} className="project-title">
+                    <Col md={3} xs = {8} className="project-title">
                         <h6> {row.title} </h6>
                     </Col>
 
-                    <Col md={8}>
+                    <Col md={8} className="project-about">
                         <p> {row.about}</p>
                     </Col>
                 </Row>

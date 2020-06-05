@@ -49,14 +49,13 @@ class TopNav extends Component {
 
             <Link to="/about">About</Link>
             <Link to="/blogs">Articles</Link>
-            <a href = {Pdf} >Portfolio</a>
+            <a target= "_blank" href = {Pdf} >Portfolio</a>
 
         </Nav>
       </Navbar.Collapse>
 
     </Navbar>
     </Navbar>
-
   );
   }
 }

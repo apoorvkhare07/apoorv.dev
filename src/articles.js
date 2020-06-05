@@ -29,12 +29,12 @@ class Article extends Component{
         const articles_comp = articles.map((row,index) => {
             return(
                 <Row className="project-item">
-                    <Col md={1} >
+                    <Col md={1} xs = {3} >
                         <img src = {row.icon} className= "logo-icon" />
                     </Col>
 
-                    <Col>
-                        <p> {row.title}</p>
+                    <Col className="project-title-3">
+                        <h6> {row.title}</h6>
                     </Col>
                 </Row>
             )
@@ -42,11 +42,11 @@ class Article extends Component{
 
         return (
             <Container fluid className="list-container">
-                <Row>
+
                 <h1>
                     Articles
                 </h1>
-                </Row>
+
                 {articles_comp}
             </Container>
         )

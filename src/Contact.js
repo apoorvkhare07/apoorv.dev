@@ -9,7 +9,7 @@ class Contact extends Component{
         return(
             <Container fluid className="footer">
                 <Row>
-                    <Col lg= {7} className = "note">
+                    <Col lg= {7} xs = {12} className = "note">
                         {/* <p> Let's talk, write to me at apoorvkhare007@gmail.com </p> */}
 
                     <p>
