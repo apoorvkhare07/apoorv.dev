@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
 import logo from './static/logo.png'
 
-class Article extends Component{
+class ArticleList extends Component{
     render(){
         const articles = [
             {
@@ -41,16 +41,16 @@ class Article extends Component{
         })
 
         return (
-            <Container fluid className="list-container">
+            <Row fluid className="list-container">
 
                 <h1>
                     Articles
                 </h1>
 
                 {articles_comp}
-            </Container>
+            </Row>
         )
     }
 }
 
-export default Article;
+export default ArticleList;
