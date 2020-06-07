@@ -38,13 +38,20 @@ class TopNav extends Component {
 
       <a href="/" className="navbar-brand">
       <img className = "logo" src = {logo} />
-      Apoorv Khare
+        Apoorv Khare
+      </a>
+
+      <a href="/" className="navbar-brand-logo">
+      <img className = "logo" src = {logo} />
+
       </a>
 
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
 
         </Nav>
+        </Navbar.Collapse>
+
         <Nav>
 
             <Link to="/about">About</Link>
@@ -52,7 +59,6 @@ class TopNav extends Component {
             <a target= "_blank" href = {Pdf} >Portfolio</a>
 
         </Nav>
-      </Navbar.Collapse>
 
     </Navbar>
     </Navbar>

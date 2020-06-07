@@ -11,7 +11,7 @@ class About extends Component {
       return (
         <Container fluid className="banner">
 
-                    <Col lg={10} className= "intro">
+                    <Col lg={10} xs = {10} className= "intro">
                     <Row>
                         <h1> About me </h1>
                         <p> I'm Apoorv Khare, final year undergrad at IIT Roorkee, India. I am a full stack software developer, open source contributor, aspiring technical writer and a wanna be designer.</p>

@@ -8,7 +8,7 @@ class Blogs extends Component {
       return (
         <Container fluid className="banner">
 
-                    <Col lg= {10} className="intro">
+                    <Col lg= {10} xs = {10} className="intro">
                         <Row>
                         <h1> Blogs </h1>
                             <p> Here are some of the blogs I wrote, mostly on various life experiences, both technical and non-technical.</p>
