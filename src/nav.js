@@ -56,7 +56,7 @@ class TopNav extends Component {
 
             <Link to="/about">About</Link>
             <Link to="/blogs">Articles</Link>
-            <a target= "_blank" href = {Pdf} >Portfolio</a>
+            <a target= "_blank" href = "/static/media/dev.pdf" >Portfolio</a>
 
         </Nav>
 

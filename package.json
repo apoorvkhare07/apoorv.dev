@@ -23,9 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && npm run build:clean",
-    "build:clean": "mv build/static/media/dev_cv.8285d7ef.pdf build/static/media/dev.pdf && yarn build-rename",
-    "build-rename": " sed -i  -e \"s/dev_cv.pdf/dev.pdf/g\" build/asset-manifest.json && yarn build-rename-2",
-    "build-rename-2": " sed -i  -e \"s/dev_cv.8285d7ef.pdf/dev.pdf/g\" build/asset-manifest.json ",
+    "build:clean": "mv build/static/media/dev_cv.8285d7ef.pdf build/static/media/dev.pdf ",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

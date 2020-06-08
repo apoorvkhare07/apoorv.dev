@@ -47,7 +47,7 @@ class Main extends Component{
                             I’m currently looking for internship in software development. Get in touch if you have an interesting project to discuss. I'm around.
 
                         </p>
-                        <a href={Pdf} target="_blank"><button className="email-cta-2">View CV</button></a>
+                        <a href="/static/media/dev.pdf" target="_blank"><button className="email-cta-2">View CV</button></a>
                         <a target = "_blank" href="mailto:apoorvkhare007@gmail.com" ><button className="email-cta">Email me</button></a>
 
 
