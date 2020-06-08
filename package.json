@@ -24,8 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && npm run build:clean",
     "build:clean": "cd build/static/media && mv dev_cv.8285d7ef.pdf dev.pdf && npm run build-rename",
-    "build-rename": "sudo sed -i  -e \"s/dev_cv.pdf/dev.pdf/g\" ./build/asset-manifest.json ",
-    "build-rename-2": "sudo sed -i  -e \"s/dev_cv.8285d7ef.pdf/dev.pdf/g\" ./build/asset-manifest.json ",
+    "build-rename": " sed -i  -e \"s/dev_cv.pdf/dev.pdf/g\" ./build/asset-manifest.json && && npm run build-rename-2",
+    "build-rename-2": " sed -i  -e \"s/dev_cv.8285d7ef.pdf/dev.pdf/g\" ./build/asset-manifest.json ",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -47,7 +47,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
-    "renamer": "^2.0.1"
+    "gh-pages": "^2.2.0"
   }
 }
