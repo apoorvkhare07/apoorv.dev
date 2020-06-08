@@ -506,11 +506,14 @@ button :focus{
   display: flex;
   justify-content: center;
   margin-top: 10px;
+
 }
 
 @media (min-width: 550px){
   .icons{
     margin-top: 40px;
+    justify-content: left;
+    padding-left: 5vw !important;
   }
 }
 
