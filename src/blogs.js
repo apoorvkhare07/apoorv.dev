@@ -14,7 +14,10 @@ class Blogs extends Component {
                             <p> Here are some of the blogs I wrote, mostly on various life experiences, both technical and non-technical.</p>
                             <p> PS: These are not technical tutorials which would help you in building your next project but experiences and learning which a developer might relate to </p>
                         </Row>
+
+                        <Row>
                         <ArticleList/>
+                        </Row>
 
                     </Col>
 

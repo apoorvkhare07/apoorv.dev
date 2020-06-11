@@ -41,14 +41,14 @@ class ArticleList extends Component{
         })
 
         return (
-            <Row fluid className="list-container">
+            <Container fluid className="list-container">
 
                 <h1>
                     Articles
                 </h1>
 
                 {articles_comp}
-            </Row>
+            </Container>
         )
     }
 }
