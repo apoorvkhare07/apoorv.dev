@@ -43,9 +43,18 @@ class Article extends Component{
         return (
             <Container fluid className="list-container">
 
-                <h1>
-                    Articles
-                </h1>
+                    <Row className='subHead'>
+                    <h3 style={{width: '20%'}}> blogs </h3> 
+                    <hr className='hrLine' />
+                    </Row>
+                    <Row>
+                    I [1]write elegant code; [2]design accessible interfaces; [3]deploy scalable apps; 
+                    <br /> [4]author helpful documentation; [5]nurture FOSS communities and [6]sneak easter eggs.
+                    <br /> <br /> I, much like this site, am a 🚧 work in progress.
+                        {/* <p> I'm Apoorv Khare, final year undergrad at IIT Roorkee, India. I am a full stack software developer, open source contributor, aspiring technical writer and a wanna be designer.</p>
+                        <p> I am constantly looking forward to apply the core concepts to real world problems across science and engineering and coding them at the same time in order to create products which aim to solve peoples problem and focus on user satisfaction. </p> */}
+                    <br /><br />
+                    </Row>
 
                 {articles_comp}
             </Container>

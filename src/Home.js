@@ -11,14 +11,10 @@ class Home extends Component {
   render() {
     return (
 
-      <Container fluid className = 'landing' >
 
         <Main />
-        <List />
-        <Project />
-        <Article />
+        
 
-      </Container>
   );
   }
 }

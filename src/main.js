@@ -5,14 +5,45 @@ import Container from 'react-bootstrap/Container'
 import me from './static/me.jpg'
 import Button from 'react-bootstrap/Button'
 import Pdf from './Docs/dev_cv.pdf'
+import Typewriter from 'typewriter-effect';
+
+
 
 class Main extends Component{
+    // bannerColorList = ['#ef46b1', '#d946ef', '#8546ef', '#00ffff', '#40ff00', '#ffbf00']
+    bannerColorList = ['#ffd479']
     state = {
         scrolled: false,
-      }
+        idx: localStorage.getItem('quote_index') || 0,
+    }
+
+    quotes = [
+      'Also wears many other hats.',
+      'Is a computer whisperer.',
+      'Designs his own websites.',
+      'Crafts new and innovative <s>apps</s> bugs.',
+      'Has talked to computers for over half his life.',
+      'Writes code; <em>sometimes</em> gets paid for it.',
+      'Knows how to exit vim.',
+      'Occasionally finishes a side-project.',
+    ]
+
+    kaomojis = [
+      '(´•ᴗ•`)ノ', 
+      '(◕ᴗ◕)◞*',
+      '[❛▽❛]ﾉﾟ',
+      '[ˇヮˇ]ﾉ',
+      '(^◡^)ﾉﾟ',
+      '[^ᴗ^]ﾉﾟ',
+      '[◕ヮ◕]ﾉ',
+      '(ˇ▽ˇ)◞*'
+
+
+    ]
 
       componentDidMount() {
         window.addEventListener('scroll', this.navOnScroll)
+        localStorage.setItem('quote_index', JSON.stringify((this.state.idx+1)%1))
       }
 
       componentWillUnmount() {
@@ -29,30 +60,50 @@ class Main extends Component{
 
       render() {
         const { scrolled } = this.state
+
+        const handleMouseMove = () => {
+          let btn = document.querySelector('.mouse-cursor-gradient-tracking');
+        btn.addEventListener('mousemove', e => {
+          let rect = e.target.getBoundingClientRect();
+          let x = e.clientX - rect.left;
+          let y = e.clientY - rect.top;
+          btn.style.setProperty('--x', x + 'px');
+          btn.style.setProperty('--y', y + 'px');
+        })
+      }
+
+        const text = " \
+    _                                    _  ____                       *\n \
+   / \\    _ __   ___   ___  ____ _   __ | |/ / |__   __ _ _ __ ___ \n \
+  / _ \\  | '_ \\ / _ \\ / _ \\| '__\\ \\ / / | ' /| '_ \\ / _` | '__/ _ \\ \n \
+ / ___ \\ | |_) | (_) | (_) | |   \\ V /  | . \\| | | | (_| | | |  __/ \n \
+/_/   \\_\\   __/ \\___/ \\___/|_|    \\_/   |_|\\_\\_| |_|\\__,_|_|  \\___| \n \
+         |_|                                                        \n "
+
         return (
-            <Container fluid className= { scrolled ? "banner-2" : "banner" }>
-
+            <Container fluid className="banner">
                     <Col md={8} lg={8} className= "lead">
-                        <h1> Hi, I'm Apoorv </h1>
-                        <p> I'm a software developer working towards building <span style={{color: "#ffd479"}}>cross‑platform </span> and <span style={{color: "#ffd479"}}>full‑stack </span> web and mobile apps, <span style={{color: "#ffd479"}}> opensource </span> projects and <span style={{color: "#ffd479"}}> writing </span> about new technologies.</p>
-                        <p className = "call-to-act">
-                        <a href={Pdf} target="_blank"><button className="email-cta-2">View CV</button></a>
-                        <button onclick="location.href='mailto:apoorvkhare007@gmail.com" className="email-cta">Email me</button>
+                        
+                        {/* <h1> Hi, I'm Apoorv </h1> */}
+                        
+                        <pre dangerouslySetInnerHTML={{__html: text }} className='mouse-cursor-gradient-tracking' style={{color: this.bannerColorList[this.state.idx]}}>
+                           
+                        
+                        </pre>
+                        
+                        <p>  <span style={{color: "#ffd479", fontWeight: 700}}> Software developer </span> with love for <span style={{color: "#ffd479", fontWeight: 700}}> Startups </span> and <span style={{color: "#ffd479", fontWeight: 700}}>Blockchain</span>.</p>
+                        
+                        <p className='typeWriter'>
+                        <Typewriter
+                          options={{
+                            strings: this.quotes,
+                            autoStart: true,
+                            loop: true,
+                          }}
+                          />
                         </p>
                     </Col>
-
-                    <Col md = {4} lg = {4} className="elevator">
-                        <img src = {me} className="my-image" />
-                        <p>
-                            I’m currently looking for internship in software development. Get in touch if you have an interesting project to discuss. I'm around.
-
-                        </p>
-                        <a href="/static/media/dev.pdf" target="_blank"><button className="email-cta-2">View CV</button></a>
-                        <a target = "_blank" href="mailto:apoorvkhare007@gmail.com" ><button className="email-cta">Email me</button></a>
-
-
-                    </Col>
-
+                       
             </Container>
         )
     }
