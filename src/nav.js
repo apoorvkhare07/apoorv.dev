@@ -2,20 +2,26 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import logo from './static/logo.png';
 import {BrowserRouter as Router, Link} from 'react-router-dom'
-import Pdf from './Docs/dev_cv.pdf'
 
 class TopNav extends Component {
   state = {
     scrolled: false,
+    kaomoji_idx: localStorage.getItem("kaomoji_idx") || 0
   }
+
+  kaomojis = [
+    '(´•ᴗ•`)ノ', 
+    '(◕ᴗ◕)◞*',
+    '[❛▽❛]ﾉﾟ',
+  ]
 
   componentDidMount() {
     window.addEventListener('scroll', this.navOnScroll)
+    localStorage.setItem('kaomoji_idx', (this.state.kaomoji_idx+1)%3)
   }
 
   componentWillUnmount() {
@@ -32,35 +38,33 @@ class TopNav extends Component {
 
   render() {
     const { scrolled } = this.state
+    const pathname = window.location.pathname;
     return (
-      <Navbar className= { scrolled ? "nav-container-2" : "nav-container" } collapseOnSelect expand="lg"  variant="dark">
-      <Navbar className= { scrolled ? "top-nav-2" : "top-nav" } collapseOnSelect expand="lg"  variant="dark">
+      <Navbar className="top-nav-new" collapseOnSelect expand="lg"  variant="dark">
+        { pathname === '/' ?
+        <a>
+          {this.kaomojis[this.state.kaomoji_idx]} 
+        
+        </a> :
+        <a href="/">
+        <span className='logo'>Apoorv Khare</span>  
+        </a>
+        }
 
-      <a href="/" className="navbar-brand">
-      <img className = "logo" src = {logo} />
-        Apoorv Khare
-      </a>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
 
-      <a href="/" className="navbar-brand-logo">
-      <img className = "logo" src = {logo} />
+          </Nav>
+          </Navbar.Collapse>
 
-      </a>
+          <Nav>
 
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
+              <a href="/about"> <u> about </u></a>
+              <a href="/blogs"> <u> articles </u></a>
+              <a href="/works"> <u> works </u></a>
+              <a target= "_blank" href = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" > <u> résumé </u></a>
 
-        </Nav>
-        </Navbar.Collapse>
-
-        <Nav>
-
-            <Link to="/about">About</Link>
-            <Link to="/blogs">Articles</Link>
-            <a target= "_blank" href = "/static/media/dev.pdf" >Portfolio</a>
-
-        </Nav>
-
-    </Navbar>
+          </Nav>
     </Navbar>
   );
   }

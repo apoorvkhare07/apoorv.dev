@@ -43,11 +43,11 @@ class Works extends Component {
             <Container fluid className="banner">
                 <Col lg= {12} xs = {10} className="intro">
                 <Row className='subHead'>
-                        <h3 style={{width: '8%'}}> works </h3> 
+                        <h3 style={{width: '8%'}}> Works </h3> 
                         <hr className='hrLine' />
                 </Row>
                 <div className='roles'>
-                <caption class="text-left font-semibold lowercase text-low">roles</caption>
+                <caption class="text-left font-semibold  text-low">Roles</caption>
                     <WorkTable />
                 </div>
                 <ProjectPanel projectData={projectData} />

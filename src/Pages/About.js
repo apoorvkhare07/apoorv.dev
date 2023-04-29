@@ -1,14 +1,7 @@
 import React, {Component} from 'react';
 import '../index.css';
-import App from '../App';
-import * as serviceWorker from '../serviceWorker';
 import {Col, Row, Container} from 'react-bootstrap';
-import List from '../Table.js';
-import Contact from '../Contact'
-import githublogo from '../static/icons8-github.svg'
-import twitterlogo from '../static/icons8-twitter.svg'
-import linkedinlogo from '../static/icons8-linkedin.svg'
-import maillogo from '../static/icons8-mail.svg'
+
 
 class About extends Component {
     render() {
@@ -25,7 +18,7 @@ class About extends Component {
                     </Row>
                     <Row>
                     I [1]write elegant code; [2]design accessible interfaces; [3]deploy scalable apps; 
-                    <br /> [4]author helpful documentation; [5]nurture FOSS communities and [6]sneak easter eggs.
+                    <br /> [4]author helpful documentation; [5]nurture Opensource communities and [6] builds decentralized applications.
                     <br /> <br /> I, much like this site, am a 🚧 work in progress.
                         {/* <p> I'm Apoorv Khare, final year undergrad at IIT Roorkee, India. I am a full stack software developer, open source contributor, aspiring technical writer and a wanna be designer.</p>
                         <p> I am constantly looking forward to apply the core concepts to real world problems across science and engineering and coding them at the same time in order to create products which aim to solve peoples problem and focus on user satisfaction. </p> */}

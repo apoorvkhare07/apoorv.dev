@@ -16,9 +16,9 @@ const ProjectPanel = (props) => {
                         <h3 style={{width: '10%'}}> projects </h3> 
                         <hr className='hrLine' />
                       </Row>
-                      <div className='projectPanel'>
+                      {/* <div className='projectPanel'>
                       {projects}
-                      </div>
+                      </div> */}
                     </Col>
             </Container>
         </div>
