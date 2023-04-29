@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3146ea01.css",
+    "main.js": "/static/js/main.1322ea04.js",
+    "static/media/iitrlogo.png": "/static/media/iitrlogo.0ff951f1df2cc1cacd84.png",
+    "static/media/dev_cv.pdf": "/static/media/dev_cv.21dddd677216ebd080d7.pdf",
+    "static/media/andromeda.png": "/static/media/andromeda.317f3bc927dc5b79edf6.png",
+    "static/media/me.jpg": "/static/media/me.7fd3c16403be190ed987.jpg",
+    "static/media/theme.png": "/static/media/theme.4a01ccf79d7e7177ef1f.png",
+    "static/media/dataphi.png": "/static/media/dataphi.3f90d4eba683675395c9.png",
+    "index.html": "/index.html",
+    "main.3146ea01.css.map": "/static/css/main.3146ea01.css.map",
+    "main.1322ea04.js.map": "/static/js/main.1322ea04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3146ea01.css",
+    "static/js/main.1322ea04.js"
+  ]
+}
